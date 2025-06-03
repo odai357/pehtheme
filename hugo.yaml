@@ -299,7 +299,7 @@ params:
         image: /images/brent-cox-ydGRmobx5jA-unsplash.jpg
         featured:
           name: "View"
-          link: http://localhost:1313/posts/1/assignment-1/
+          link: /posts/1/assignment-1/
         badges:
           - "Markdown"
           - "Python"
