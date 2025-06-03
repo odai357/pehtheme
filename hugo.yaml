@@ -1,7 +1,9 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://odai357.github.io/pehtheme/"
 languageCode: "en-us"
 title: "Hugo Profile"
 theme: hugo-profile
+relativeURLs: true
+canonifyURLs: true
 
 outputs:
   home:
