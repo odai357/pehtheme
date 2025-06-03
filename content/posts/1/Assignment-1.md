@@ -1,10 +1,15 @@
+---
+publishDate: 2025-06-03T00:40:04-07:00
+title: Assignment 1
+---
+
 # Matrix Multiplication Project Report
 
 **Student Name**: ODAI OTHMAN 
 
 **Student ID**: LS2425241
 
-**Submission Date**: March 10. 2025
+**Submission Date**: May 3. 2025
 
 ---
 

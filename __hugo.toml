@@ -1,0 +1,14 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New  Site'
+
+theme = "hugo-profile"
+
+[pagination]
+  pagerSize = 6
+
+[params]
+  summaryLength = 20
+  googleAnalytics = ''  # Add your GA4 code
+  disqusShortname = ''  # Add your Disqus shortname
+
