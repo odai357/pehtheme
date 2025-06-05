@@ -1,5 +1,5 @@
 ---
-publishDate: 2025-06-03T00:40:04-07:00
+publishDate: 2025-05-19T00:40:04-07:00
 title: Assignment 1
 ---
 
