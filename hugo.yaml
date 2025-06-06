@@ -238,7 +238,7 @@ params:
         image: /images/llm.jpg
         featured:
           name: "View"
-          link: /posts/1/Assignment-4/
+          link: /posts/1/assignment-4/
         badges:
           - "RGB"
           - "CAS"
