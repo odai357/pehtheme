@@ -261,7 +261,7 @@ The system successfully demonstrates:
 
 ### Screenshots
 
-![Alt text](/images/d1.jpg) ![Alt text](/images/exe 1.jpg)
+![Alt text](/images/d1.jpg) ![Alt text](/images/exe1.jpg)
 
 ---
 ## 6. Compilation and Execution
