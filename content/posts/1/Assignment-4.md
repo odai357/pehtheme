@@ -309,7 +309,7 @@ python train_model.py
 
 - **Operating System**: Windows 10/11, Ubuntu 18.04+, or macOS 10.14+
 - **Python**: Version 3.8 or higher
-- **Hardware**: Intel RealSense D435i camera, USB 3.0 port
+- **Hardware**: Intel RealSense D415 camera, USB 3.0 port
 - **Memory**: Minimum 4GB RAM (8GB recommended for ML training)
 - **Storage**: 500MB for installation, additional space for training data
 
@@ -367,7 +367,7 @@ class AIAssistant:
 
 ## 9. Source Code Repository
 
-**Repository Access**: [GitHub Repository Link]
+**Repository Access**: [https://github.com/odai357/pehtheme/]
 
 **Contents:**
 - Complete source code with detailed comments
