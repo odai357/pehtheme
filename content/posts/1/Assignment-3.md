@@ -16,15 +16,17 @@ title: Assignment 3
 ---
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Environment Setup](#environment-setup)
-3. [Local Model Deployment with Ollama](#local-model-deployment-with-ollama)
-4. [Online Model API Setup](#online-model-api-setup)
-5. [GUI Integration with AnythingLLM](#gui-integration-with-anythingllm)
-6. [Development Environment Integration](#development-environment-integration)
-7. [Performance Comparison](#performance-comparison)
-8. [Challenges and Solutions](#challenges-and-solutions)
-9. [Conclusion](#conclusion)
+1. [Project Overview](#1-project-overview)
+2. [Environment Setup](#2-environment-setup)
+3. [Local Model Deployment with Ollama](#3-local-model-deployment-with-ollama)
+4. [DeepSeek Online and Local Comparison](#4-deepseek-online-and-local-comparison)
+5. [GUI Integration with AnythingLLM](#5-gui-integration-with-anythingllm)
+6. [Development Environment Integration](#6-development-environment-integration)
+7. [Performance Comparison](#7-performance-comparison)
+8. [Conclusion](#11-conclusion)
+9. [Bonus: Research Workflow Optimization](#bonus-research-workflow-optimization-3-points)
+10. [Commands Quick Reference](#commands-quick-reference)
+11. [Resources](#resources)
 
 ---
 
@@ -181,67 +183,74 @@ Ollama Keep Alive: 5 minutes
    - Refactoring: Select code and ask "Refactor this function"
 
 
----
+## 7. DeepSeek Online and Local Comparison
 
-## 7. Performance Comparison
+| Feature         | Local (via Ollama)           | Online (via AnythingLLM)     |
+|------------------|-------------------------------|-------------------------------|
+| Installation     | Required                      | Handled by GUI                |
+| Latency          | Very low                      | Slightly higher               |
+| Resource Usage   | Uses local GPU/CPU            | Offloaded to API/host system  |
+| Internet         | ❌ Not required                | ✅ Required                    |
+| Privacy          | ✅ High                        | ⚠️ Depends on host config      |
+| Ease of Use      | CLI-based interaction         | Full GUI                      |
 
-### Local Model (DeepSeek-R1 1.5B via Ollama)
-
-| Metric | Performance |
-|--------|-------------|
-| Response Time | 1-3 seconds |
-| Token Generation | ~20-30 tokens/sec |
-| Memory Usage | ~2GB RAM |
-| Offline Capability | ✅ Yes |
-| Privacy | ✅ Complete |
-| Cost | Free |
-| Context Length | 128K tokens |
-
-### Online Model (Example: GPT-3.5)
-
-| Metric | Performance |
-|--------|-------------|
-| Response Time | 2-5 seconds (with internet) |
-| Token Generation | ~50+ tokens/sec |
-| Memory Usage | Minimal (API-based) |
-| Offline Capability | ❌ No |
-| Privacy | ⚠️ Data sent to servers |
-| Cost | Pay per token |
-| Context Length | 4K-16K tokens |
-
-### Comparison Analysis
-
-**Local Model Advantages**:
-- Complete privacy and data security
-- No internet required
-- No usage costs
-- Consistent performance
-
-**Online Model Advantages**:
-- More powerful models available
-- No local resource requirements
-- Always up-to-date
-- Better for complex tasks
-
+Both variants use the same model architecture but differ in delivery: CLI vs GUI/API. I used both modes interchangeably during testing.
 
 ---
 
-## 9. Conclusion
+## 8. GUI Integration with AnythingLLM
 
-### Achievements
-✅ Successfully deployed local LLM using Ollama  
-✅ Integrated DeepSeek-R1 1.5B model  
-✅ Configured AnythingLLM for GUI interface  
-✅ Tested development environment integration  
-✅ Documented complete setup process  
+- Installed [AnythingLLM](https://anythingllm.com)
+- Connected to my local Ollama instance:
+  ```
+  Base URL: http://127.0.0.1:11434
+  Model: deepseek-r1:1.5b
+  ```
 
-### Key Learnings
-1. **Local LLMs are Practical**: Modern models like DeepSeek-R1 can run efficiently on consumer hardware
-2. **Privacy Matters**: Local deployment ensures complete data privacy
-3. **GUI Enhances Usability**: AnythingLLM makes LLM interaction more accessible
-4. **Integration is Key**: LLMs are most useful when integrated into existing workflows
+### Benefits:
+- Easier to run conversations
+- GUI-based workspace creation and chat history
+- Supports multi-model routing
 
+---
 
+## 9. Development Environment Integration
+
+### Using Copilot + DeepSeek
+
+In **Visual Studio Code**, I leveraged:
+- **Copilot** for real-time coding suggestions and syntax help
+- **DeepSeek (local)** for logic explanation, refactoring, and documentation tasks
+
+### Example Workflow:
+1. Write base code with Copilot autocomplete
+2. Ask DeepSeek to refactor or optimize code via AnythingLLM
+3. Use Copilot again to refine UI logic
+
+---
+
+## 10. Performance Comparison
+
+| Metric              | DeepSeek (Local) | DeepSeek (Online) |
+|---------------------|------------------|-------------------|
+| Speed               | ✅ Fast           | ⚠️ Slightly slower |
+| Stability           | ✅ Reliable       | ✅ Stable          |
+| Flexibility         | ✅ Full CLI       | ✅ GUI-based       |
+| Usage Mode          | Offline-friendly | Requires internet |
+| Cost                | Free             | Free              |
+
+---
+
+## 11. Conclusion
+
+✅ Deployed DeepSeek 1.5B locally  
+✅ Connected to AnythingLLM  
+✅ Integrated into software development using VS Code and Copilot  
+✅ Compared online/local model capabilities  
+
+**Key Learning**:
+- DeepSeek models are powerful and usable both locally and through GUI tools like AnythingLLM.
+- Combining Copilot for real-time suggestions and DeepSeek for deeper understanding creates an efficient workflow for building software.
 ### Bonus: Research Workflow Optimization (+3 points)
 *I will implement this to devolop a software and add documentation here about integrating LLMs into my research workflow*
 

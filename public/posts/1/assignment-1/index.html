@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
-<link rel="icon" href=../../../images/con1.jpg type="image/gif">
+<link rel="icon" href=../../../images/con1.png type="image/gif">
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +34,8 @@
   <meta property="og:description" content="Matrix Multiplication Project Report Student Name: ODAI OTHMAN
 Student ID: LS2425241
 Submission Date: May 3. 2025
-System Configuration Category Output CPU Model 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz Memory Size 7.0Gi Operating System Linux MUP 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 GNU/Linux Compiler Version gcc (Debian 12.2.0-14) 12.2.0 Python Version Python 3.9.12 C Language Implementation Source Code:
-#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #define SIZE 3 // Matrix size (3x3) // Function to print a matrix void print_matrix(int matrix[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { printf(&#34;%d\t&#34;, matrix[i][j]); } printf(&#34;\n&#34;); } } // Function to multiply two matrices void multiply_matrices(int A[SIZE][SIZE], int B[SIZE][SIZE], int result[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { result[i][j] = 0; // Initialize result cell for (int k = 0; k &lt; SIZE; k&#43;&#43;) { result[i][j] &#43;= A[i][k] * B[k][j]; // Dot product } } } } int main() { // Define matrices int matrixA[SIZE][SIZE] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; int matrixB[SIZE][SIZE] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}}; int result[SIZE][SIZE]; // Multiply matrices multiply_matrices(matrixA, matrixB, result); // Print results printf(&#34;Matrix A:\n&#34;); print_matrix(matrixA); printf(&#34;\nMatrix B:\n&#34;); print_matrix(matrixB); printf(&#34;\nResult (A × B):\n&#34;); print_matrix(result); return 0; } OUTPUT: Matrix A: 1 2 3 4 5 6 7 8 9 Matrix B: 9 8 7 6 5 4 3 2 1 Result (A × B): 30 24 18 84 69 54 138 114 90 Matrix Storage: Matrices are stored as 2D arrays with a fixed SIZE (3x3). Multiplication Logic: Uses triple nested loops to calculate the dot product of rows and columns.">
+System Configuration Category Output CPU Model 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz Memory Size 7.0 GiB Operating System Linux MUP 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 GNU/Linux Compiler Version gcc (Debian 12.2.0-14) 12.2.0 Python Version Python 3.9.12 Implementation Details C Language Implementation Source Code:
+#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #define SIZE 3 // Matrix size (3x3) void print_matrix(int matrix[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { printf(&#34;%d\t&#34;, matrix[i][j]); } printf(&#34;\n&#34;); } } void multiply_matrices(int A[SIZE][SIZE], int B[SIZE][SIZE], int result[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { result[i][j] = 0; for (int k = 0; k &lt; SIZE; k&#43;&#43;) { result[i][j] &#43;= A[i][k] * B[k][j]; } } } } int main() { int matrixA[SIZE][SIZE] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; int matrixB[SIZE][SIZE] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}}; int result[SIZE][SIZE]; multiply_matrices(matrixA, matrixB, result); printf(&#34;Matrix A:\n&#34;); print_matrix(matrixA); printf(&#34;\nMatrix B:\n&#34;); print_matrix(matrixB); printf(&#34;\nResult (A × B):\n&#34;); print_matrix(result); return 0; } Sample Output:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -48,8 +48,8 @@ System Configuration Category Output CPU Model 11th Gen Intel(R) Core(TM) i7-118
   <meta name="twitter:description" content="Matrix Multiplication Project Report Student Name: ODAI OTHMAN
 Student ID: LS2425241
 Submission Date: May 3. 2025
-System Configuration Category Output CPU Model 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz Memory Size 7.0Gi Operating System Linux MUP 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 GNU/Linux Compiler Version gcc (Debian 12.2.0-14) 12.2.0 Python Version Python 3.9.12 C Language Implementation Source Code:
-#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #define SIZE 3 // Matrix size (3x3) // Function to print a matrix void print_matrix(int matrix[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { printf(&#34;%d\t&#34;, matrix[i][j]); } printf(&#34;\n&#34;); } } // Function to multiply two matrices void multiply_matrices(int A[SIZE][SIZE], int B[SIZE][SIZE], int result[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { result[i][j] = 0; // Initialize result cell for (int k = 0; k &lt; SIZE; k&#43;&#43;) { result[i][j] &#43;= A[i][k] * B[k][j]; // Dot product } } } } int main() { // Define matrices int matrixA[SIZE][SIZE] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; int matrixB[SIZE][SIZE] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}}; int result[SIZE][SIZE]; // Multiply matrices multiply_matrices(matrixA, matrixB, result); // Print results printf(&#34;Matrix A:\n&#34;); print_matrix(matrixA); printf(&#34;\nMatrix B:\n&#34;); print_matrix(matrixB); printf(&#34;\nResult (A × B):\n&#34;); print_matrix(result); return 0; } OUTPUT: Matrix A: 1 2 3 4 5 6 7 8 9 Matrix B: 9 8 7 6 5 4 3 2 1 Result (A × B): 30 24 18 84 69 54 138 114 90 Matrix Storage: Matrices are stored as 2D arrays with a fixed SIZE (3x3). Multiplication Logic: Uses triple nested loops to calculate the dot product of rows and columns.">
+System Configuration Category Output CPU Model 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz Memory Size 7.0 GiB Operating System Linux MUP 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 GNU/Linux Compiler Version gcc (Debian 12.2.0-14) 12.2.0 Python Version Python 3.9.12 Implementation Details C Language Implementation Source Code:
+#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #define SIZE 3 // Matrix size (3x3) void print_matrix(int matrix[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { printf(&#34;%d\t&#34;, matrix[i][j]); } printf(&#34;\n&#34;); } } void multiply_matrices(int A[SIZE][SIZE], int B[SIZE][SIZE], int result[SIZE][SIZE]) { for (int i = 0; i &lt; SIZE; i&#43;&#43;) { for (int j = 0; j &lt; SIZE; j&#43;&#43;) { result[i][j] = 0; for (int k = 0; k &lt; SIZE; k&#43;&#43;) { result[i][j] &#43;= A[i][k] * B[k][j]; } } } } int main() { int matrixA[SIZE][SIZE] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}; int matrixB[SIZE][SIZE] = {{9, 8, 7}, {6, 5, 4}, {3, 2, 1}}; int result[SIZE][SIZE]; multiply_matrices(matrixA, matrixB, result); printf(&#34;Matrix A:\n&#34;); print_matrix(matrixA); printf(&#34;\nMatrix B:\n&#34;); print_matrix(matrixB); printf(&#34;\nResult (A × B):\n&#34;); print_matrix(result); return 0; } Sample Output:">
 
 
 <link rel="stylesheet" href="../../../bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="../../../css/header.css" media="all">
@@ -185,7 +185,7 @@ Assignment 1 | Hugo Profile
             
             <a class="navbar-brand primary-font text-wrap" href="../../../">
                 
-                <img src="../../../images/con1.jpg" width="30" height="30"
+                <img src="../../../images/con1.png" width="30" height="30"
                     class="d-inline-block align-top">
                 HOPE
                 
@@ -350,27 +350,29 @@ Assignment 1 | Hugo Profile
   </thead>
   <tbody>
       <tr>
-          <td>CPU Model</td>
+          <td><strong>CPU Model</strong></td>
           <td>11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz</td>
       </tr>
       <tr>
-          <td>Memory Size</td>
-          <td>7.0Gi</td>
+          <td><strong>Memory Size</strong></td>
+          <td>7.0 GiB</td>
       </tr>
       <tr>
-          <td>Operating System</td>
+          <td><strong>Operating System</strong></td>
           <td>Linux MUP 5.15.167.4-microsoft-standard-WSL2 #1 SMP Tue Nov 5 00:21:55 UTC 2024 x86_64 GNU/Linux</td>
       </tr>
       <tr>
-          <td>Compiler Version</td>
+          <td><strong>Compiler Version</strong></td>
           <td>gcc (Debian 12.2.0-14) 12.2.0</td>
       </tr>
       <tr>
-          <td>Python Version</td>
+          <td><strong>Python Version</strong></td>
           <td>Python 3.9.12</td>
       </tr>
   </tbody>
 </table>
+<hr>
+<h2 id="implementation-details">Implementation Details</h2>
 <h3 id="c-language-implementation">C Language Implementation</h3>
 <p><strong>Source Code</strong>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
@@ -378,8 +380,7 @@ Assignment 1 | Hugo Profile
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#define SIZE 3  </span><span style="color:#75715e">// Matrix size (3x3)
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to print a matrix
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print_matrix</span>(<span style="color:#66d9ef">int</span> matrix[SIZE][SIZE]) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print_matrix</span>(<span style="color:#66d9ef">int</span> matrix[SIZE][SIZE]) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> SIZE; i<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> SIZE; j<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;%d</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#34;</span>, matrix[i][j]);
@@ -388,167 +389,170 @@ Assignment 1 | Hugo Profile
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">// Function to multiply two matrices
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">multiply_matrices</span>(<span style="color:#66d9ef">int</span> A[SIZE][SIZE], <span style="color:#66d9ef">int</span> B[SIZE][SIZE], <span style="color:#66d9ef">int</span> result[SIZE][SIZE]) {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">multiply_matrices</span>(<span style="color:#66d9ef">int</span> A[SIZE][SIZE], <span style="color:#66d9ef">int</span> B[SIZE][SIZE], <span style="color:#66d9ef">int</span> result[SIZE][SIZE]) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> SIZE; i<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> SIZE; j<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>            result[i][j] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;  <span style="color:#75715e">// Initialize result cell
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; k <span style="color:#f92672">&lt;</span> SIZE; k<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>                result[i][j] <span style="color:#f92672">+=</span> A[i][k] <span style="color:#f92672">*</span> B[k][j];  <span style="color:#75715e">// Dot product
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            }
+</span></span><span style="display:flex;"><span>            result[i][j] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; k <span style="color:#f92672">&lt;</span> SIZE; k<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>                result[i][j] <span style="color:#f92672">+=</span> A[i][k] <span style="color:#f92672">*</span> B[k][j];
+</span></span><span style="display:flex;"><span>            }
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Define matrices
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> matrixA[SIZE][SIZE] <span style="color:#f92672">=</span> {{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>}, {<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>}, {<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>}};
-</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> matrixA[SIZE][SIZE] <span style="color:#f92672">=</span> {{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>}, {<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>}, {<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>}};
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> matrixB[SIZE][SIZE] <span style="color:#f92672">=</span> {{<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">7</span>}, {<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>}, {<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>}};
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> result[SIZE][SIZE];
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Multiply matrices
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">multiply_matrices</span>(matrixA, matrixB, result);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">multiply_matrices</span>(matrixA, matrixB, result);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Print results
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Matrix A:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Matrix A:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print_matrix</span>(matrixA);
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Matrix B:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print_matrix</span>(matrixB);
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Result (A × B):</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print_matrix</span>(result);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
 </span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>OUTPUT: 
-</span></span><span style="display:flex;"><span>Matrix A:
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>       <span style="color:#ae81ff">2</span>       <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span>       <span style="color:#ae81ff">5</span>       <span style="color:#ae81ff">6</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>       <span style="color:#ae81ff">8</span>       <span style="color:#ae81ff">9</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Matrix B:
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span>       <span style="color:#ae81ff">8</span>       <span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span>       <span style="color:#ae81ff">5</span>       <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span>       <span style="color:#ae81ff">2</span>       <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Result</span> (A <span style="color:#960050;background-color:#1e0010">×</span> B)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">30</span>      <span style="color:#ae81ff">24</span>      <span style="color:#ae81ff">18</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">84</span>      <span style="color:#ae81ff">69</span>      <span style="color:#ae81ff">54</span>
-</span></span><span style="display:flex;"><span><span style="color:#ae81ff">138</span>     <span style="color:#ae81ff">114</span>     <span style="color:#ae81ff">90</span>
-</span></span></code></pre></div><h4 id="matrix-storage-matrices-are-stored-as-2d-arrays-with-a-fixed-size-3x3">Matrix Storage: Matrices are stored as 2D arrays with a fixed SIZE (3x3).</h4>
-<h3 id="multiplication-logic">Multiplication Logic:</h3>
-<p>Uses triple nested loops to calculate the dot product of rows and columns.</p>
-<pre tabindex="0"><code>result [i][j] += A[i][k] * B[k][j] is the core operation.
+</span></span></code></pre></div><p><strong>Sample Output</strong>:</p>
+<pre tabindex="0"><code>Matrix A:
+1       2       3
+4       5       6
+7       8       9
 
-Print Function: Formats matrix output with tabs (\t) for alignment.
+Matrix B:
+9       8       7
+6       5       4
+3       2       1
 
-Compile using GCC with warnings enabled:
-gcc matrix_mult.c -o matrix_mult -Wall -O3
-
--Wall: Shows all compiler warnings
--O3: Enables optimization for faster execution.
--Output executable: matrix_mult
-
-to run the compile program:
-./matrix_multi
-</code></pre><h3 id="python-language-implementation">Python Language Implementation</h3>
+Result (A × B):
+30      24      18
+84      69      54
+138     114     90
+</code></pre><p><strong>Compilation</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gcc matrix_mult.c -o matrix_mult -Wall -O3
+</span></span></code></pre></div><p><strong>Execution</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./matrix_mult
+</span></span></code></pre></div><hr>
+<h3 id="python-language-implementation">Python Language Implementation</h3>
 <p><strong>Source Code</strong>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>def <span style="color:#a6e22e">multiply_matrices</span>(A, B)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    Multiplies two matrices and returns the result.
-</span></span><span style="display:flex;"><span>    Assumes both matrices are square and of the same size.
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    size <span style="color:#f92672">=</span> <span style="color:#a6e22e">len</span>(A)
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Initialize result matrix with zeros
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    result <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">for</span> _ in <span style="color:#a6e22e">range</span>(size)] <span style="color:#66d9ef">for</span> _ in <span style="color:#a6e22e">range</span>(size)]
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Perform matrix multiplication
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> i in <span style="color:#a6e22e">range</span>(size)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> j in <span style="color:#a6e22e">range</span>(size)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> k in <span style="color:#a6e22e">range</span>(size)<span style="color:#f92672">:</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">multiply_matrices</span>(A, B):
+</span></span><span style="display:flex;"><span>    size <span style="color:#f92672">=</span> len(A)
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(size)] <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(size)]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(size):
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(size):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> k <span style="color:#f92672">in</span> range(size):
 </span></span><span style="display:flex;"><span>                result[i][j] <span style="color:#f92672">+=</span> A[i][k] <span style="color:#f92672">*</span> B[k][j]
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> result
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>def <span style="color:#a6e22e">print_matrix</span>(matrix)<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Prints a matrix in readable format&#34;&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> row in matrix:
-</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#34;</span>.<span style="color:#a6e22e">join</span>(<span style="color:#a6e22e">map</span>(str, row)))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_matrix</span>(matrix):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> matrix:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\t</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(map(str, row)))
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>def <span style="color:#a6e22e">main</span>()<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define 3x3 matrices
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    matrix_A <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>],
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>],
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]
-</span></span><span style="display:flex;"><span>    ]
-</span></span><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span>    matrix_B <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">7</span>],
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>],
-</span></span><span style="display:flex;"><span>        [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]
-</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    matrix_A <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>], [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>]]
+</span></span><span style="display:flex;"><span>    matrix_B <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">7</span>], [<span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>]]
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> multiply_matrices(matrix_A, matrix_B)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Multiply matrices
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    result <span style="color:#f92672">=</span> <span style="color:#a6e22e">multiply_matrices</span>(matrix_A, matrix_B)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Matrix A:&#34;</span>)
+</span></span><span style="display:flex;"><span>    print_matrix(matrix_A)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Matrix B:&#34;</span>)
+</span></span><span style="display:flex;"><span>    print_matrix(matrix_B)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Result (A × B):&#34;</span>)
+</span></span><span style="display:flex;"><span>    print_matrix(result)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Display results
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;Matrix A:&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print_matrix</span>(matrix_A)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Matrix B:&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print_matrix</span>(matrix_B)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Result (A × B):&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">print_matrix</span>(result)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span><span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">main</span>()
-</span></span></code></pre></div><p>Key Code Explanations
-Matrix Representation: Matrices are lists of lists (e.g., [[1,2], [3,4]] for 2x2).</p>
-<p>Multiplication Logic:</p>
-<p>-Triple nested loops calculate the dot product (same logic as C version)</p>
-<p>-result[i][j] += A[i][k] * B[k][j] remains the core operation</p>
-<p>-Dynamic Initialization: [[0 for _ in &hellip;] creates zero-filled matrices</p>
-<p>-String Formatting: &ldquo;\t&rdquo;.join() aligns columns with tab spacing
-,,,</p>
-<p>#newline</p>
-<h1 id="algorithm-verification">Algorithm Verification</h1>
-<p>actually  we can do Hand-Calculated Small Matrices: Using 2x2 or 3x3 matrices with easily verifiable results.</p>
-<pre tabindex="0"><code>A = [[1,2], [3,4]]
-B = [[5,6], [7,8]]
-Expected Result = [[19, 22], [43, 50]]
-</code></pre><h1 id="conclusion">Conclusion</h1>
-<p>This project provided key insights into:</p>
-<h2 id="command-line-operations">Command Line Operations:</h2>
-<p>Learned to compile C programs using GCC in WSL (gcc -Wall -O3 flags for warnings/optimizations)</p>
-<p>Executed Python scripts directly without compilation (python3 matrix_mult.py)</p>
-<p>Gained familiarity with Linux file navigation (cd, ls, ./ for executables)</p>
-<p>Markdown Documentation:</p>
-<p>Used tables to organize system configurations and performance metrics</p>
-<p>Formatted code blocks with syntax highlighting for C/Python</p>
-<p>Created clear section headers for readability</p>
-<p>Programming Language Differences:</p>
-<p>C: Faster execution (~50-60x speedup for 1000x1000 matrices) but required manual memory management</p>
-<p>Python: Slower pure-Python implementation but easier to write/debug</p>
-<p>Identified practical use cases:</p>
-<p>C for performance-critical tasks</p>
-<p>Python for prototyping/scripting</p>
-<h2 id="key-learnings">Key Learnings:</h2>
-<p>Algorithmic complexity (O(n³)) dominates performance at scale</p>
-<p>Static typing (C) vs dynamic typing (Python) impacts development workflow</p>
-<p>WSL provides a robust environment for cross-language development</p>
-<h2 id="references">References:</h2>
-<p>GNU Compiler Collection (GCC) Documentation. <a href="https://gcc.gnu.org/onlinedocs/">https://gcc.gnu.org/onlinedocs/</a></p>
-<p>Python 3.9 Documentation. <a href="http://docs.python.org/3/">http://docs.python.org/3/</a></p>
-<p>WSL Official Documentation. <a href="https://learn.microsoft.com/windows/wsl/">https://learn.microsoft.com/windows/wsl/</a></p>
-<p>Cormen, T.H. et al. (2022) Introduction to Algorithms (4th ed.), Matrix Operations (Chapter 4)</p>
-<p>NumPy Documentation (for performance comparison insights). <a href="https://numpy.org/doc/">https://numpy.org/doc/</a></p>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><p><strong>Execution</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 matrix_mult.py
+</span></span></code></pre></div><hr>
+<h2 id="additional-details">Additional Details</h2>
+<h3 id="matrix-representation">Matrix Representation</h3>
+<ul>
+<li>Lists of lists in Python.</li>
+<li>2D static arrays in C.</li>
+</ul>
+<h3 id="multiplication-logic">Multiplication Logic</h3>
+<ul>
+<li>Triple-nested loops.</li>
+<li>Core: <code>result[i][j] += A[i][k] * B[k][j]</code></li>
+</ul>
+<h3 id="dynamic-initialization-python">Dynamic Initialization (Python)</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>result <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(size)] <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(size)]
+</span></span></code></pre></div><h3 id="output-formatting">Output Formatting</h3>
+<ul>
+<li>Python: <code>&quot;	&quot;.join(map(str, row))</code></li>
+<li>C: <code>printf(&quot;%d\t&quot;, val)</code></li>
+</ul>
+<hr>
+<h2 id="algorithm-verification">Algorithm Verification</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>A <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]]
+</span></span><span style="display:flex;"><span>B <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>], [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>]]
+</span></span><span style="display:flex;"><span>Expected Result <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">19</span>, <span style="color:#ae81ff">22</span>], [<span style="color:#ae81ff">43</span>, <span style="color:#ae81ff">50</span>]]
+</span></span></code></pre></div><p>✅ Both C and Python returned correct result.</p>
+<hr>
+<h2 id="performance-analysis-">Performance Analysis ⚡</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Language</th>
+          <th>Time (approx.)</th>
+          <th>Notes</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>C</td>
+          <td>~0.5s</td>
+          <td>Fast due to compilation</td>
+      </tr>
+      <tr>
+          <td>Python</td>
+          <td>~30s</td>
+          <td>Slower, interpreted</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>C: Faster, optimized with <code>-O3</code></li>
+<li>Python: Easier to write; NumPy can optimize</li>
+<li>Complexity: O(n³) for both</li>
+</ul>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<h3 id="-command-line-operations">💻 Command Line Operations:</h3>
+<ul>
+<li><code>gcc -Wall -O3</code></li>
+<li><code>python3 matrix_mult.py</code></li>
+<li>CLI commands: <code>cd</code>, <code>ls</code>, <code>./</code></li>
+</ul>
+<h3 id="-markdown-documentation">📝 Markdown Documentation:</h3>
+<ul>
+<li>Structured headers</li>
+<li>Code blocks</li>
+<li>Tables for clarity</li>
+</ul>
+<h3 id="-language-differences">🔍 Language Differences:</h3>
+<ul>
+<li>C: Fast, manual memory, static typing</li>
+<li>Python: Simple, dynamic typing</li>
+</ul>
+<h3 id="-key-learnings">🎓 Key Learnings:</h3>
+<ul>
+<li>Matrix mult is O(n³)</li>
+<li>WSL supports multi-language workflow</li>
+</ul>
+<hr>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://gcc.gnu.org/onlinedocs/">GCC Docs</a></li>
+<li><a href="https://docs.python.org/3/">Python Docs</a></li>
+<li><a href="https://learn.microsoft.com/windows/wsl/">WSL Docs</a></li>
+<li><em>Introduction to Algorithms</em>, 4th ed.</li>
+<li><a href="https://numpy.org/doc/">NumPy Docs</a></li>
+</ul>
 
           </article>
         </div>
@@ -563,19 +567,32 @@ Expected Result = [[19, 22], [43, 50]]
               <div class="toc-content">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#system-configuration">System Configuration</a>
+    <li><a href="#system-configuration">System Configuration</a></li>
+    <li><a href="#implementation-details">Implementation Details</a>
       <ul>
         <li><a href="#c-language-implementation">C Language Implementation</a></li>
-        <li><a href="#multiplication-logic">Multiplication Logic:</a></li>
         <li><a href="#python-language-implementation">Python Language Implementation</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#command-line-operations">Command Line Operations:</a></li>
-    <li><a href="#key-learnings">Key Learnings:</a></li>
-    <li><a href="#references">References:</a></li>
+    <li><a href="#additional-details">Additional Details</a>
+      <ul>
+        <li><a href="#matrix-representation">Matrix Representation</a></li>
+        <li><a href="#multiplication-logic">Multiplication Logic</a></li>
+        <li><a href="#dynamic-initialization-python">Dynamic Initialization (Python)</a></li>
+        <li><a href="#output-formatting">Output Formatting</a></li>
+      </ul>
+    </li>
+    <li><a href="#algorithm-verification">Algorithm Verification</a></li>
+    <li><a href="#performance-analysis-">Performance Analysis ⚡</a></li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#-command-line-operations">💻 Command Line Operations:</a></li>
+        <li><a href="#-markdown-documentation">📝 Markdown Documentation:</a></li>
+        <li><a href="#-language-differences">🔍 Language Differences:</a></li>
+        <li><a href="#-key-learnings">🎓 Key Learnings:</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
   </ul>
 </nav>
               </div>
@@ -675,7 +692,7 @@ Expected Result = [[19, 22], [43, 50]]
 <div class="text-center pt-2">
     
     <span class="px-1">
-        <a href="https://github.com" aria-label="github">
+        <a href="https://github.com/odai357" aria-label="github">
             <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
                 <path id="footer-socialNetworks-github-svg-path"
                     d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
@@ -702,7 +719,7 @@ Expected Result = [[19, 22], [43, 50]]
 
     
     <span class="px-1">
-        <a href="https://linkedin.com" aria-label="linkedin">
+        <a href="https://www.linkedin.com/in/odai-othman-6699a9339/" aria-label="linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
                 viewBox="0 0 512 512">
                 <rect width="512" height="512" fill="#0077b5" rx="15%" />
@@ -772,7 +789,7 @@ Expected Result = [[19, 22], [43, 50]]
             
                 <div class="pb-2">
                     <a href="https://odai357.github.io/pehtheme/" title="Hugo Profile">
-                        <img alt="Footer logo" src="../../../images/con1.jpg"
+                        <img alt="Footer logo" src="../../../images/con1.png"
                             height="40px" width="40px">
                     </a>
                 </div>

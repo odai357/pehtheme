@@ -64,7 +64,7 @@ params:
   title: "Hugo Profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/images/con1.jpg"
+  favicon: "/images/con1.png"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -138,7 +138,7 @@ params:
     intro: "Hi, my name is"
     title: "Odai-泽鑫"
     subtitle: "I bridge Earth's coordinates with universal potential"
-    content: "温故知新🌟"
+    content: "🌟温故知新🌟"
     image: /images/hero1.png
     bottomImage:
       enable: true
@@ -156,7 +156,7 @@ params:
         - icon: fab fa-x-twitter
           url: https://x.com/OdaiRma357
       customIcons:
-        - icon: /images/con.png
+        - icon: /images/con1.png
           url: "https://example.com"
 
   # About
@@ -202,7 +202,7 @@ params:
           - icon: fa fa-envelope
             url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
+            url: https://github.com/odai357
           - icon: fab fa-twitter
             url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
 
@@ -217,7 +217,7 @@ params:
           - "hugo-Profile" 
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/odai357
 
       - title: Assignment 3
         content: Deployment and Integration of LLM
@@ -231,7 +231,7 @@ params:
           - "AnythingLLM"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/odai357
 
       - title: Assignment 4
         content: AI-Assisted Collision Avoidance System
@@ -245,8 +245,7 @@ params:
           - "EXE"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfil
-
+            url: https://github.com/odai357
 
             
 
@@ -272,8 +271,8 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
+      github: https://github.com/odai357
+      linkedin: https://www.linkedin.com/in/odai-othman-6699a9339/
       twitter: https://twitter.com
       instagram: https://instagram.com
       facebook: https://facebook.com
