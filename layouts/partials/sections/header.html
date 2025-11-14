@@ -182,6 +182,13 @@
                             Certificates
                         </a>
                     </li>
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}projects"
+                            aria-label="contact">
+                            Projects
+                        </a>
+                    </li>
 
                     {{ if (not .Site.Params.theme.disableThemeToggle | default false) }}
                     <li class="nav-item navbar-text">
