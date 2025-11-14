@@ -1,0 +1,25 @@
+{{- /* Start collecting pages */ -}}
+{{- $.Scratch.Add "pages" slice -}}
+
+{{- range .Site.RegularPages -}}
+  {{- $date := "" -}}
+  {{- if .Date -}}
+    {{- $date = .Date.Format "2006-01-02" -}}
+  {{- end -}}
+
+  {{- /* Trim description to 150 characters */ -}}
+  {{- $desc := .Plain | plainify | truncate 150 -}}
+
+  {{- $.Scratch.Add "pages" (dict 
+        "title" .Title
+        "permalink" .RelPermalink
+        "content" .Plain
+        "tags" (or .Params.tags (slice))
+        "date" $date
+        "description" $desc
+        "featuredImage" (or .Params.featuredImage "")
+    ) -}}
+{{- end -}}
+
+{{- /* Output JSON */ -}}
+{{- $.Scratch.Get "pages" | jsonify -}}
