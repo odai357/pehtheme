@@ -2,26 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/pehtheme/posts/1/assignment-4/</loc>
+    <loc>https://odai357.github.io/pehtheme/certificates/</loc>
+    <lastmod>2025-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://odai357.github.io/pehtheme/</loc>
+    <lastmod>2025-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://odai357.github.io/pehtheme/posts/1/assignment-4/</loc>
     <lastmod>2025-06-04T00:40:04-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pehtheme/</loc>
+    <loc>https://odai357.github.io/pehtheme/posts/</loc>
     <lastmod>2025-06-04T00:40:04-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pehtheme/posts/</loc>
-    <lastmod>2025-06-04T00:40:04-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/pehtheme/posts/1/assignment-3/</loc>
+    <loc>https://odai357.github.io/pehtheme/posts/1/assignment-3/</loc>
     <lastmod>2025-05-30T00:40:04-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pehtheme/posts/1/assignment-2/</loc>
+    <loc>https://odai357.github.io/pehtheme/posts/1/assignment-2/</loc>
     <lastmod>2025-05-20T00:40:04-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pehtheme/posts/1/assignment-1/</loc>
+    <loc>https://odai357.github.io/pehtheme/posts/1/assignment-1/</loc>
     <lastmod>2025-05-19T00:40:04-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/pehtheme/categories/</loc>
+    <loc>https://odai357.github.io/pehtheme/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/pehtheme/tags/</loc>
+    <loc>https://odai357.github.io/pehtheme/tags/</loc>
   </url>
 </urlset>

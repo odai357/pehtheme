@@ -34,13 +34,13 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
+  
 Menus:
   main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
+    - identifier: certificates
+      name: Certificates
+      title: Certificates
+      url: /certificates
       weight: 1
     - identifier: gallery
       name: Gallery
