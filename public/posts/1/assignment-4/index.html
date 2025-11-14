@@ -28,6 +28,20 @@
 
 
 
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG0WJKJVBF"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GG0WJKJVBF');
+        }
+      </script>
 <meta property="og:url" content="https://odai357.github.io/pehtheme/posts/1/assignment-4/">
   <meta property="og:site_name" content="Hugo Profile">
   <meta property="og:title" content="Assignment 4">
@@ -560,7 +574,7 @@ Assignment 4 | Hugo Profile
 <h4 id="architecture-suggestions">Architecture Suggestions</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># AI-suggested modular design pattern</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CollisionDetector</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, threshold<span style="color:#f92672">=</span><span style="color:#ae81ff">1.0</span>):
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>threshold <span style="color:#f92672">=</span> threshold
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>ml_model <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
 </span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>ml_enabled <span style="color:#f92672">=</span> <span style="color:#66d9ef">False</span>
