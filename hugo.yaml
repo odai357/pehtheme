@@ -37,10 +37,10 @@ markup:
   
 Menus:
   main:
-    - identifier: certificates
-      name: Certificates
-      title: Certificates
-      url: /certificates
+    - identifier: experience
+      name: Experience
+      title: Experience
+      url: /experience
       weight: 1
     - identifier: gallery
       name: Gallery
