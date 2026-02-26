@@ -188,70 +188,56 @@ params:
 
 
 
-  # Assignments
+  # Projects
   projects:
     enable: true
-    title: "Assignments"
+    title: "Projects"
     items:
-      - title: Assignment 1
-        content: Matrix Multiplication Project Report
-        image: /images/brent-cox-ydGRmobx5jA-unsplash.jpg
+      - title: Unveiling Spatial Patterns of Aircraft Occurrences in Brazil Through Clustering and Statistical Analysis
+        content: I was part of this research project that investigates aircraft incidents in Brazil using statistical analysis and machine learning techniques to uncover spatial patterns and contributing risk factors in aviation safety. Our work focused heavily on cleaning and correcting inconsistent geographic and aircraft data from the national aviation database maintained by CENIPA, then applying clustering methods such as K-Means, Agglomerative clustering, and density-based approaches alongside statistical tests like chi-square and logistic regression. The analysis revealed clear regional patterns tied to air-traffic infrastructure and showed significant relationships between incident characteristics and their geographic distribution, demonstrating how data-driven methods can support better risk assessment and safety planning in Brazil's aviation sector.
+        image: /images/Slide1.PNG
+        gallery:
+          - url: /images/Slide1.PNG
         featured:
-          name: "View"
-          link: /posts/1/assignment-1/
+          name: "View Paper (Will be available soon...)"
+          link: "#"
         badges:
-          - "Markdown"
-          - "Python"
-          - "C++"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/odai357
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+          - "ML - Clustering"
 
-      - title: Assignment 2
-        content: Static Personal Blog Website Documentation
-        image: /images/javardh.jpg
-        featured:
-          name: "View"
-          link: /posts/1/assignment-2/
+      - title: Custom-Built Autonomous Drone Platform Using Holybro X500 Frame
+        content: This project involved building and configuring a fully functional drone based on the X500 frame from Holybro, integrating flight control hardware, sensors, and onboard computing into a stable aerial platform. The work covered mechanical assembly, flight controller configuration, power distribution, firmware setup, and calibration, followed by test flights to validate stability and responsiveness. The project demonstrates hands-on experience with UAV hardware integration, embedded systems, and real-world debugging, forming a foundation for future work in autonomous navigation, computer vision, or aerial robotics applications.
+        image: /images/p2_1.png
+        gallery:
+          - url: /images/p2_1.png
+          - url: /images/p2_2.png
+          - url: /images/p2_3.jpg
         badges:
-          - "HUGO"
-          - "hugo-Profile" 
-        links:
-          - icon: fab fa-github
-            url: https://github.com/odai357
+          - "Holybro-X500"
 
-      - title: Assignment 3
-        content: Deployment and Integration of LLM
-        image: /images/nasa-rh.jpg
+      - title: AI-Assisted Collision Avoidance System
+        content: This project presents a self-developed AI-assisted collision avoidance system that detects obstacles in real time using depth sensing and computer vision. It uses an Intel RealSense D435i camera to capture 3D spatial data and combines depth analysis with a CNN-based model to improve detection reliability, generating color-coded safety alerts based on distance. Built primarily in Python with libraries such as OpenCV and TensorFlow, the system maintains real-time performance near 30 FPS while supporting modular components, dataset generation, and deployment on lightweight hardware including Raspberry Pi. AI development tools like GitHub Copilot and ChatGPT were used to accelerate experimentation, optimization, and debugging, illustrating how modern AI-assisted workflows can enable efficient development of practical real-time vision systems.
+        image: /images/p3_1.png
+        gallery:
+          - url: /images/p3_1.png
+          - url: /images/p3_2.png
         featured:
-          name: "View"
-          link: /posts/1/assignment-3/
-        badges:
-          - "Ollama"
-          - "Deepseek"
-          - "AnythingLLM"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/odai357
-
-      - title: Assignment 4
-        content: AI-Assisted Collision Avoidance System
-        image: /images/llm.jpg
-        featured:
-          name: "View"
+          name: "View Details"
           link: /posts/1/assignment-4/
         badges:
-          - "RGB"
-          - "CAS"
-          - "EXE"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/odai357
+          - "Collision Avoidance"
 
+      - title: Real-Time Kinematic Performance Evaluation of Mosaic-H GNSS Receiver on UAV Platforms Under Diverse Environmental Conditions
+        content: "This paper presents a comprehensive evaluation of the Mosaic-H GNSS receiver's Real-Time Kinematic (RTK) performance when integrated with UAV platforms across diverse environments—including open-sky, urban canyon, and forested areas. Through systematic testing, the study achieved an 88.2% RTK fixed solution rate overall, with horizontal accuracy averaging 3.1 cm in optimal conditions. Key findings established critical operational thresholds: maintaining >10 m clearance from buildings to prevent multipath degradation, canopy coverage above 70% triggering float solutions, and speeds exceeding 8 m/s challenging phase tracking. The research introduced a novel Multipath Impact Score (MP Score) correlating environmental factors with positioning quality (R² = 0.87), and demonstrated that operating at altitudes of 20–25 m significantly improves fix stability and correction density. These results provide empirical benchmarks and operational guidelines for reliable centimeter-level UAV navigation in complex environments, with direct applications to precision agriculture, infrastructure inspection, and autonomous surveying."
+        image: /images/Screenshot_2.png
+        gallery:
+          - url: /images/Screenshot_1.png
+          - url: /images/Screenshot_2.png
+        featured:
+          name: "View Paper"
+          link: https://www.cpgps.org/wwwroot/issue202401/JoGPS_2024_Joint_Issues_pp26-44.pdf
+        badges:
+          - "RTK GNSS"
+          - "UAV Navigation"
             
 
   #Contact
