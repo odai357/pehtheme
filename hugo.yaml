@@ -238,6 +238,23 @@ params:
         badges:
           - "RTK GNSS"
           - "UAV Navigation"
+
+      - title: GNSS Signal Processing, Navigation Systems, and Integrated Positioning
+        content: A comprehensive series of laboratory experiments exploring the full stack of satellite navigation technologies. Work began with fundamental GPS L1 C/A signal acquisition and tracking, implementing parallel code phase search and analyzing DLL/PLL loop performance under varying noise conditions. Subsequent experiments examined ephemeris parameter extraction, Kalman filtering for positioning, and high-precision receiver data parsing (NMEA, RINEX). Advanced topics included Real-Time Kinematic (RTK) differential positioning with integer ambiguity resolution, GNSS/INS integration using Error-State Kalman Filtering (ESKF) for sensor fusion, controlled signal attenuation testing with a satellite simulator, and hands-on implementation of BeiDou short message communication using Arduino hardware. Throughout these investigations, key concepts such as Doppler search grids, DOP analysis, tropospheric/ionospheric corrections, covariance tuning, and yaw divergence in integrated navigation were systematically analyzed and validated through experimental data.
+        image: /images/p5_1.jpg
+        gallery:
+          - url: /images/p5_1.jpg
+          - url: /images/p5_2.png
+          - url: /images/p5_3.png
+        featured:
+          name: "View Reports (7 Lab Documents)"
+          link: "/assignments"
+        badges:
+          - "GNSS"
+          - "RTK"
+          - "Kalman Filtering"
+          - "Sensor Fusion"
+          - "BeiDou"
             
 
   #Contact
