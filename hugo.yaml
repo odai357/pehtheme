@@ -213,7 +213,7 @@ projects:
 
     - title: Low-Altitude UAV Route Planning in Urban Environments
       content: This research project investigates autonomous route planning for low-altitude UAVs operating in dense urban environments. The work models a constrained 2D airspace with buildings, safety buffers, and corridor-based flight paths. Multiple classical planning algorithms—including A*, Jump Point Search (JPS), RRT*, and Bi-RRT*—are implemented and compared under identical environmental conditions using Monte Carlo simulations.
-      The study evaluates three mission scenarios: baseline corridor navigation, emergency dispatch from multiple depots to a single destination, and multi-destination coverage planning. To improve robustness in uncertain urban environments, the project introduces uncertainty-aware cost functions and adaptive planning strategies such as dynamic step-size adjustment and greedy path optimization.
+      The study evaluates three mission scenarios : baseline corridor navigation, emergency dispatch from multiple depots to a single destination, and multi-destination coverage planning. To improve robustness in uncertain urban environments, the project introduces uncertainty-aware cost functions and adaptive planning strategies such as dynamic step-size adjustment and greedy path optimization.
         Experimental results show the trade-offs between grid-based and sampling-based planners in terms of path optimality, computation time, and success rate.
       image: /images/uav1.png
       gallery:
