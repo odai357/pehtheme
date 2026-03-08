@@ -141,13 +141,13 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Odai-泽鑫"
-    subtitle: "I bridge Earth's coordinates with universal potential"
-    content: "🌟温故知新🌟"
+    title: "Odai Othman (泽鑫) - 🌟温故知新🌟"
+    subtitle: "Researcher in Navigation Systems, UAVs Routing, and Intelligent Transportation"
+    content: "Exploring how positioning technologies, optimization algorithms, and autonomous systems can shape the future of air mobility."
     image: /images/hero1.png
     bottomImage:
       enable: true
-      roundImage: true # Make hero image circular | default false
+      roundImage: true
     button:
       enable: true
       name: "Resume"
@@ -170,21 +170,28 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a postgraduate researcher at BUAA's RCSSTEAP, specializing in GNSS and hybrid indoor/outdoor navigation systems. Building on my background in Communication Engineering and multilingual business development, I now focus on solving challenging positioning problems in complex environments.
+      I am a postgraduate researcher at the Research Center for Satellite Space Technology and Applications (RCSSTEAP) at Beihang University, focusing on satellite navigation systems, UAV route planning, and intelligent transportation systems.
 
-      
+      My research explores how optimization algorithms, navigation technologies, and simulation models can improve autonomous aerial mobility and complex transportation systems. I work on UAV path planning in constrained environments, uncertainty-aware routing strategies, and algorithmic evaluation of grid-based and sampling-based planners.
+
+      I previously completed my degree in Communication Engineering at the Civil Aviation University of China, where I developed strong foundations in wireless communication, satellite systems, and aviation technologies.
+
+      My broader research interest lies in integrating navigation technologies, optimization methods, and multi-agent systems to enable safer and more efficient transportation networks. I am particularly interested in applications related to UAV systems, advanced air mobility, airport operations modeling, and sustainable aviation technologies.
+
+      Outside research, I enjoy working in international and multidisciplinary environments and communicating technical ideas across cultures and languages.
+
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Technologies and research areas I work with:"
       items:
-       - "GNSS Positioning Algorithms"
-       - "Sensor Fusion for Navigation"
-       - "Indoor Positioning Systems"
-       - "MATLAB/Python for Engineering"
-       - "Satellite Navigation Data Analysis"
-       - "Multilingual Technical Communication"
-       - "Research Collaboration"
-       - "SSR/BDS Systems"
+        - "GNSS Positioning and RTK Systems"
+        - "UAV Route Planning and Optimization"
+        - "Sensor Fusion for Navigation"
+        - "Indoor / Outdoor Hybrid Positioning"
+        - "MATLAB and Python for Engineering"
+        - "Satellite Navigation Data Analysis"
+        - "SSR / BeiDou Systems"
+        - "Multi-Agent Path Planning"
 
 
 
