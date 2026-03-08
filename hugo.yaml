@@ -141,7 +141,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Odai Othman (泽鑫)  🌟温故知新🌟"
+    title: "Odai Othman (泽鑫) 🌟温故知新🌟"
     subtitle: "Researcher in Navigation Systems, UAVs Routing, and Intelligent Transportation"
     content: "Exploring how positioning technologies, optimization algorithms, and autonomous systems can shape the future of air mobility."
     image: /images/hero1.png
@@ -195,74 +195,94 @@ params:
 
 
 
-  # Projects
-  projects:
-    enable: true
-    title: "Projects"
-    items:
-      - title: Unveiling Spatial Patterns of Aircraft Occurrences in Brazil Through Clustering and Statistical Analysis
-        content: I was part of this research project that investigates aircraft incidents in Brazil using statistical analysis and machine learning techniques to uncover spatial patterns and contributing risk factors in aviation safety. Our work focused heavily on cleaning and correcting inconsistent geographic and aircraft data from the national aviation database maintained by CENIPA, then applying clustering methods such as K-Means, Agglomerative clustering, and density-based approaches alongside statistical tests like chi-square and logistic regression. The analysis revealed clear regional patterns tied to air-traffic infrastructure and showed significant relationships between incident characteristics and their geographic distribution, demonstrating how data-driven methods can support better risk assessment and safety planning in Brazil's aviation sector.
-        image: /images/Slide1.PNG
-        gallery:
-          - url: /images/Slide1.PNG
-        featured:
-          name: "View Paper (Will be available soon...)"
-          link: "#"
-        badges:
-          - "ML - Clustering"
+# Projects
+projects:
+  enable: true
+  title: "Projects"
+  items:
+    - title: Unveiling Spatial Patterns of Aircraft Occurrences in Brazil Through Clustering and Statistical Analysis
+      content: I was part of this research project that investigates aircraft incidents in Brazil using statistical analysis and machine learning techniques to uncover spatial patterns and contributing risk factors in aviation safety. Our work focused heavily on cleaning and correcting inconsistent geographic and aircraft data from the national aviation database maintained by CENIPA, then applying clustering methods such as K-Means, Agglomerative clustering, and density-based approaches alongside statistical tests like chi-square and logistic regression. The analysis revealed clear regional patterns tied to air-traffic infrastructure and showed significant relationships between incident characteristics and their geographic distribution, demonstrating how data-driven methods can support better risk assessment and safety planning in Brazil's aviation sector.
+      image: /images/Slide1.PNG
+      gallery:
+        - url: /images/Slide1.PNG
+      featured:
+        name: "View Paper (Will be available soon...)"
+        link: "#"
+      badges:
+        - "ML - Clustering"
 
-      - title: Custom-Built Autonomous Drone Platform Using Holybro X500 Frame
-        content: This project involved building and configuring a fully functional drone based on the X500 frame from Holybro, integrating flight control hardware, sensors, and onboard computing into a stable aerial platform. The work covered mechanical assembly, flight controller configuration, power distribution, firmware setup, and calibration, followed by test flights to validate stability and responsiveness. The project demonstrates hands-on experience with UAV hardware integration, embedded systems, and real-world debugging, forming a foundation for future work in autonomous navigation, computer vision, or aerial robotics applications.
-        image: /images/p2_1.png
-        gallery:
-          - url: /images/p2_1.png
-          - url: /images/p2_2.png
-          - url: /images/p2_3.jpg
-        badges:
-          - "Holybro-X500"
+    - title: Low-Altitude UAV Route Planning in Urban Environments
+      content: This research project investigates autonomous route planning for low-altitude UAVs operating in dense urban environments. The work models a constrained 2D airspace with buildings, safety buffers, and corridor-based flight paths. Multiple classical planning algorithms—including A*, Jump Point Search (JPS), RRT*, and Bi-RRT*—are implemented and compared under identical environmental conditions using Monte Carlo simulations.
+      The study evaluates three mission scenarios: baseline corridor navigation, emergency dispatch from multiple depots to a single destination, and multi-destination coverage planning. To improve robustness in uncertain urban environments, the project introduces uncertainty-aware cost functions and adaptive planning strategies such as dynamic step-size adjustment and greedy path optimization.
+        Experimental results show the trade-offs between grid-based and sampling-based planners in terms of path optimality, computation time, and success rate.
+      image: /images/uav1.png
+      gallery:
+        - url: /images/uav1.png
+        - url: /images/uav2.png
+        - url: /images/uav3.png
+      featured:
+        name: "View Paper"
+        link: /pdf/Odai-MT.pdf
+      badges:
+        - "UAV Route Planning"
+        - "A*"
+        - "Bi-RRT*"
+        - "Urban Air Mobility"
+        - "Autonomous Navigation"
 
-      - title: Real-Time Kinematic Performance Evaluation of Mosaic-H GNSS Receiver on UAV Platforms Under Diverse Environmental Conditions
-        content: "This paper presents a comprehensive evaluation of the Mosaic-H GNSS receiver's Real-Time Kinematic (RTK) performance when integrated with UAV platforms across diverse environments—including open-sky, urban canyon, and forested areas. Through systematic testing, the study achieved an 88.2% RTK fixed solution rate overall, with horizontal accuracy averaging 3.1 cm in optimal conditions. Key findings established critical operational thresholds: maintaining >10 m clearance from buildings to prevent multipath degradation, canopy coverage above 70% triggering float solutions, and speeds exceeding 8 m/s challenging phase tracking. The research introduced a novel Multipath Impact Score (MP Score) correlating environmental factors with positioning quality (R² = 0.87), and demonstrated that operating at altitudes of 20–25 m significantly improves fix stability and correction density. These results provide empirical benchmarks and operational guidelines for reliable centimeter-level UAV navigation in complex environments, with direct applications to precision agriculture, infrastructure inspection, and autonomous surveying."
-        image: /images/Screenshot_2.png
-        gallery:
-          - url: /images/Screenshot_1.png
-          - url: /images/Screenshot_2.png
-        featured:
-          name: "View Paper"
-          link: https://www.cpgps.org/wwwroot/issue202401/JoGPS_2024_Joint_Issues_pp26-44.pdf
-        badges:
-          - "RTK GNSS"
-          - "UAV Navigation"
+    - title: Real-Time Kinematic Performance Evaluation of Mosaic-H GNSS Receiver on UAV Platforms Under Diverse Environmental Conditions
+      content: "This paper presents a comprehensive evaluation of the Mosaic-H GNSS receiver's Real-Time Kinematic (RTK) performance when integrated with UAV platforms across diverse environments—including open-sky, urban canyon, and forested areas. Through systematic testing, the study achieved an 88.2% RTK fixed solution rate overall, with horizontal accuracy averaging 3.1 cm in optimal conditions. Key findings established critical operational thresholds: maintaining >10 m clearance from buildings to prevent multipath degradation, canopy coverage above 70% triggering float solutions, and speeds exceeding 8 m/s challenging phase tracking. The research introduced a novel Multipath Impact Score (MP Score) correlating environmental factors with positioning quality (R² = 0.87), and demonstrated that operating at altitudes of 20–25 m significantly improves fix stability and correction density."
+      image: /images/Screenshot_2.png
+      gallery:
+        - url: /images/Screenshot_1.png
+        - url: /images/Screenshot_2.png
+      featured:
+        name: "View Paper"
+        link: https://www.cpgps.org/wwwroot/issue202401/JoGPS_2024_Joint_Issues_pp26-44.pdf
+      badges:
+        - "RTK GNSS"
+        - "UAV Navigation"
 
-      - title: GNSS Signal Processing, Navigation Systems, and Integrated Positioning
-        content: A comprehensive series of laboratory experiments exploring the full stack of satellite navigation technologies. Work began with fundamental GPS L1 C/A signal acquisition and tracking, implementing parallel code phase search and analyzing DLL/PLL loop performance under varying noise conditions. Subsequent experiments examined ephemeris parameter extraction, Kalman filtering for positioning, and high-precision receiver data parsing (NMEA, RINEX). Advanced topics included Real-Time Kinematic (RTK) differential positioning with integer ambiguity resolution, GNSS/INS integration using Error-State Kalman Filtering (ESKF) for sensor fusion, controlled signal attenuation testing with a satellite simulator, and hands-on implementation of BeiDou short message communication using Arduino hardware. Throughout these investigations, key concepts such as Doppler search grids, DOP analysis, tropospheric/ionospheric corrections, covariance tuning, and yaw divergence in integrated navigation were systematically analyzed and validated through experimental data.
-        image: /images/p5_1.jpg
-        gallery:
-          - url: /images/p5_1.jpg
-          - url: /images/p5_2.png
-          - url: /images/p5_3.png
-        featured:
-          name: "View Reports (7 Lab Documents)"
-          link: "/assignments"
-        badges:
-          - "GNSS"
-          - "RTK"
-          - "Kalman Filtering"
-          - "Sensor Fusion"
-          - "BeiDou"
+    - title: Custom-Built Autonomous Drone Platform Using Holybro X500 Frame
+      content: This project involved building and configuring a fully functional drone based on the X500 frame from Holybro, integrating flight control hardware, sensors, and onboard computing into a stable aerial platform.
+      image: /images/p2_1.png
+      gallery:
+        - url: /images/p2_1.png
+        - url: /images/p2_2.png
+        - url: /images/p2_3.jpg
+      badges:
+        - "Holybro-X500"
 
-      - title: AI-Assisted Collision Avoidance System
-        content: This project presents a self-developed AI-assisted collision avoidance system that detects obstacles in real time using depth sensing and computer vision. It uses an Intel RealSense D435i camera to capture 3D spatial data and combines depth analysis with a CNN-based model to improve detection reliability, generating color-coded safety alerts based on distance. Built primarily in Python with libraries such as OpenCV and TensorFlow, the system maintains real-time performance near 30 FPS while supporting modular components, dataset generation, and deployment on lightweight hardware including Raspberry Pi. AI development tools like GitHub Copilot and ChatGPT were used to accelerate experimentation, optimization, and debugging, illustrating how modern AI-assisted workflows can enable efficient development of practical real-time vision systems.
-        image: /images/p3_1.png
-        gallery:
-          - url: /images/p3_1.png
-          - url: /images/p3_2.png
-        featured:
-          name: "View Details"
-          link: /posts/1/assignment-4/
-        badges:
-          - "Collision Avoidance"
-            
+    - title: GNSS Signal Processing, Navigation Systems, and Integrated Positioning
+      content: A comprehensive series of laboratory experiments exploring the full stack of satellite navigation technologies including GPS signal acquisition, Kalman filtering, RTK positioning, and GNSS/INS integration.
+      image: /images/p5_1.jpg
+      gallery:
+        - url: /images/p5_1.jpg
+        - url: /images/p5_2.png
+        - url: /images/p5_3.png
+      featured:
+        name: "View Reports (7 Lab Documents)"
+        link: "/assignments"
+      badges:
+        - "GNSS"
+        - "RTK"
+        - "Kalman Filtering"
+        - "Sensor Fusion"
+        - "BeiDou"
+
+    - title: AI-Assisted Collision Avoidance System
+      content: This project presents a self-developed AI-assisted collision avoidance system that detects obstacles in real time using depth sensing and computer vision using an Intel RealSense D435i camera.
+      image: /images/p3_1.png
+      gallery:
+        - url: /images/p3_1.png
+        - url: /images/p3_2.png
+      featured:
+        name: "View Details"
+        link: /posts/1/assignment-4/
+      badges:
+        - "Collision Avoidance"
+
+
 
   #Contact
   contact:
