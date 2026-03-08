@@ -196,7 +196,7 @@ params:
 
 
 # Projects
-projects:
+  projects:
   enable: true
   title: "Projects"
   items:
