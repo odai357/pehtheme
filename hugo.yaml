@@ -141,7 +141,7 @@ params:
   hero:
     enable: true
     intro: "Hi, my name is"
-    title: "Odai Othman (泽鑫) - 🌟温故知新🌟"
+    title: "Odai Othman (泽鑫)  🌟温故知新🌟"
     subtitle: "Researcher in Navigation Systems, UAVs Routing, and Intelligent Transportation"
     content: "Exploring how positioning technologies, optimization algorithms, and autonomous systems can shape the future of air mobility."
     image: /images/hero1.png
@@ -221,18 +221,6 @@ params:
         badges:
           - "Holybro-X500"
 
-      - title: AI-Assisted Collision Avoidance System
-        content: This project presents a self-developed AI-assisted collision avoidance system that detects obstacles in real time using depth sensing and computer vision. It uses an Intel RealSense D435i camera to capture 3D spatial data and combines depth analysis with a CNN-based model to improve detection reliability, generating color-coded safety alerts based on distance. Built primarily in Python with libraries such as OpenCV and TensorFlow, the system maintains real-time performance near 30 FPS while supporting modular components, dataset generation, and deployment on lightweight hardware including Raspberry Pi. AI development tools like GitHub Copilot and ChatGPT were used to accelerate experimentation, optimization, and debugging, illustrating how modern AI-assisted workflows can enable efficient development of practical real-time vision systems.
-        image: /images/p3_1.png
-        gallery:
-          - url: /images/p3_1.png
-          - url: /images/p3_2.png
-        featured:
-          name: "View Details"
-          link: /posts/1/assignment-4/
-        badges:
-          - "Collision Avoidance"
-
       - title: Real-Time Kinematic Performance Evaluation of Mosaic-H GNSS Receiver on UAV Platforms Under Diverse Environmental Conditions
         content: "This paper presents a comprehensive evaluation of the Mosaic-H GNSS receiver's Real-Time Kinematic (RTK) performance when integrated with UAV platforms across diverse environments—including open-sky, urban canyon, and forested areas. Through systematic testing, the study achieved an 88.2% RTK fixed solution rate overall, with horizontal accuracy averaging 3.1 cm in optimal conditions. Key findings established critical operational thresholds: maintaining >10 m clearance from buildings to prevent multipath degradation, canopy coverage above 70% triggering float solutions, and speeds exceeding 8 m/s challenging phase tracking. The research introduced a novel Multipath Impact Score (MP Score) correlating environmental factors with positioning quality (R² = 0.87), and demonstrated that operating at altitudes of 20–25 m significantly improves fix stability and correction density. These results provide empirical benchmarks and operational guidelines for reliable centimeter-level UAV navigation in complex environments, with direct applications to precision agriculture, infrastructure inspection, and autonomous surveying."
         image: /images/Screenshot_2.png
@@ -262,6 +250,18 @@ params:
           - "Kalman Filtering"
           - "Sensor Fusion"
           - "BeiDou"
+
+      - title: AI-Assisted Collision Avoidance System
+        content: This project presents a self-developed AI-assisted collision avoidance system that detects obstacles in real time using depth sensing and computer vision. It uses an Intel RealSense D435i camera to capture 3D spatial data and combines depth analysis with a CNN-based model to improve detection reliability, generating color-coded safety alerts based on distance. Built primarily in Python with libraries such as OpenCV and TensorFlow, the system maintains real-time performance near 30 FPS while supporting modular components, dataset generation, and deployment on lightweight hardware including Raspberry Pi. AI development tools like GitHub Copilot and ChatGPT were used to accelerate experimentation, optimization, and debugging, illustrating how modern AI-assisted workflows can enable efficient development of practical real-time vision systems.
+        image: /images/p3_1.png
+        gallery:
+          - url: /images/p3_1.png
+          - url: /images/p3_2.png
+        featured:
+          name: "View Details"
+          link: /posts/1/assignment-4/
+        badges:
+          - "Collision Avoidance"
             
 
   #Contact
